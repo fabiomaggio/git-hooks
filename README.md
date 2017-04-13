@@ -1,9 +1,9 @@
 # Git hooks
 
 This is a collecion of hooks that enforce a clean commit policy:
-    * `pre-commit` disables committing files on the *master* branch.
-    * `commit-msg` checks if a commit message follows the rules that are described in [this article](https://chris.beams.io/posts/git-commit/) and append the branch name to the commit message.
-    * `.git-commit-msg-template.txt` is a template for a commit message
+* `pre-commit` disables committing files on the *master* branch.
+* `commit-msg` checks if a commit message follows the rules that are described in [this article](https://chris.beams.io/posts/git-commit/) and append the branch name to the commit message.
+* `.git-commit-msg-template.txt` is a template for a commit message
 
 ## Installation
 Clone this repository and copy the .git-commit-msg-template.txt file to your home
