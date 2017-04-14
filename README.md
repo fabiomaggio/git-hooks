@@ -27,7 +27,7 @@ The hooks will be triggered each time you try to commit.
 #### Single repository installation
 Copy the `pre-commit` and `commit-msg` files to the hooks folder of your repository:
 ```bash
-cp pre-commit path-to-your-repo/.git/hooks && chmod +x path-to-your-repo/.git/hooks/pre-commit
+cp {pre-commit,commit-msg} path-to-your-repo/.git/hooks && chmod +x path-to-your-repo/.git/hooks/{pre-commit,commit-msg}
 ```
 
 #### Global installation
