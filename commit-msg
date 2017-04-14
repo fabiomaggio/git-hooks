@@ -115,4 +115,5 @@ if [[ -n "${append_branch_name}" ]] && [[ "${append_branch_name}" = true ]]; the
         exit 1
     fi
 
-echo "[branch: ${branch}]" >> "${1}"
+    printf "\n[branch: ${branch}]" >> $1
+fi
