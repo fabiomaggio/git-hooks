@@ -2,7 +2,7 @@
 
 This is a collecion of hooks that enforce a clean commit policy:
 * `pre-commit` disables committing files on the *master* branch.
-* `commit-msg` checks if a commit message follows the rules that are described in [this article](https://chris.beams.io/posts/git-commit/) and also appends the branch name to the commit message.
+* `commit-msg` checks if a commit message follows the rules that are described in [this article](https://chris.beams.io/posts/git-commit/).
 * `.git-commit-msg-template.txt` is a default template for a commit message
 
 ## Installation
@@ -40,3 +40,13 @@ chmod +x ~/.git-templates/hooks/{pre-commit,commit-msg}
 ```
 
 The hooks will now be set after each `git init` or `git clone`. You can also re-run `git-init` on an existing repository to update the hooks folder.
+
+## Configuration
+You can choose to have the branch name appended to the commit message by enabling this behavior in the git configuration:
+```bash
+git config git-hooks.append-branch-name true
+```
+
+This can be configured for all of your repositories by passing the `--global` flag to the above command.
+By default this key will not be set and the branch name will not be appended (or if you set it to *false*).
+The key accepts *true* or *false* as possible values.
