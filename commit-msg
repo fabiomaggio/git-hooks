@@ -101,7 +101,10 @@ validate_commit_msg() {
 validate_commit_msg
 
 # Remove comment lines from the message
-sed -i.bak '/^#/ d' "${1}"
+sed -i.bak '/^#/ d' $1
+
+# Remove trailing blank lines
+sed -i.bak -e :a -e '/^\n*$/{$d;N;ba' -e '}' $1
 
 # Append the branch name to the commit message
 branch="$(git symbolic-ref --short HEAD)"
