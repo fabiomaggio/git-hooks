@@ -36,7 +36,7 @@ Create a folder that will hold the hooks
 mkdir -p ~/.git-template/hooks
 git config --global init.templatedir '~/.git-template'
 cp path-to-cloned-repo/{pre-commit,commit-msg} ~/.git-template/hooks
-chmod +x ~/.git-templates/hooks/{pre-commit,commit-msg}
+chmod +x ~/.git-template/hooks/{pre-commit,commit-msg}
 ```
 
 The hooks will now be set after each `git init` or `git clone`. You can also re-run `git-init` on an existing repository to update the hooks folder.
