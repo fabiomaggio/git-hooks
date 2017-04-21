@@ -4,7 +4,7 @@
 branch="$(git symbolic-ref --short HEAD)"
 commit_on_master=$(git config --get git-hooks.commit-on-master)
 
-if [[ "${branch}" == "master" ]] && ([[ -n "${commit_on_master}" ]] ||  [[ "${commit_on_master}" -eq false ]]); then
+if [[ "${branch}" == "master" ]] && ([[ -z "${commit_on_master}" ]] ||  [[ "${commit_on_master}" = false ]]); then
   echo "Committing on the master branch is not allowed!"
   exit 1
 fi
