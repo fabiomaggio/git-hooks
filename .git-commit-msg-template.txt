@@ -18,4 +18,18 @@
 #
 # More info: https://chris.beams.io/posts/git-commit/
 #
+# The allowed first words for the subject are:
+#   - Add
+#   - Create
+#   - Update
+#   - Change
+#   - Fix
+#   - Refactor
+#   - Clean up
+#   - Remove
+#   - Move
+#   - Delete
+#   - Resolve
+#   - Merge
+#
 #
