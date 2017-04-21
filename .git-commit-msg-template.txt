@@ -31,5 +31,6 @@
 #   - Delete
 #   - Resolve
 #   - Merge
+#   - Initial
 #
 #
